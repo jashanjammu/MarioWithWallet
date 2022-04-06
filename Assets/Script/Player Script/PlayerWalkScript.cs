@@ -15,6 +15,7 @@ public class PlayerWalkScript : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        
         myBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 
@@ -70,7 +71,7 @@ public class PlayerWalkScript : MonoBehaviour
     void checkIfGround() {
        
         isGrounded = Physics2D.Raycast(grountCheck.position ,Vector2.down,0.1f,groundLayer);
-
+        print(isGrounded);
         if (isGrounded)
         {            
             if (jumped)

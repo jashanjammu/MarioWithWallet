@@ -11,6 +11,7 @@ public class playerLife : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
         lifeScoreCount = 3;
         PlayerLife.text = " x" + lifeScoreCount;
         canDamage = true;
